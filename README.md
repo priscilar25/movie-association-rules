@@ -6,6 +6,10 @@ Análise de regras de associação em avaliações de filmes com Apriori. Projet
 
 Este projeto de Mineração de Dados tem como objetivo analisar um conjunto de dados de avaliações de filmes para identificar padrões de comportamento dos usuários. Utilizando o algoritmo **Apriori**, foi gerado regras de associação que permitem fazer recomendações baseadas no princípio de que "usuários que assistiram ao filme X também tendem assistir ao filme Y".
 
+## 🗂️ Origem dos Dados
+
+Os dados utilizados neste projeto foram obtidos do [Kaggle](https://www.kaggle.com/datasets/parasharmanas/movie-recommendation-system/code?datasetId=3375918), um repositório aberto amplamente utilizado para estudos da área de dados. Foram utilizados os arquivos `ratings.csv` e `movies.csv`, posteriormente adaptados para a análise deste estudo.
+
 ## 📜 Sobre o Projeto
 
 O núcleo do projeto consiste em transformar o histórico de avaliações de filmes em um formato transacional, onde cada transação representa os filmes que um usuário avaliou positivamente. A partir disso, foi aplicado o algoritmo Apriori para extrair *itemsets* frequentes e, subsequentemente, gerar regras de associação com métricas de **suporte**, **confiança** e **lift**.
