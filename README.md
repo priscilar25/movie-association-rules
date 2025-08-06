@@ -47,7 +47,7 @@ O projeto foi desenvolvido em dois Jupyter Notebooks, cada um focado em uma fase
 * **Mlxtend:** Biblioteca utilizada para a implementação do algoritmo Apriori e geração das regras de associação.
 * **Jupyter Notebook:** Como ambiente de desenvolvimento e apresentação do projeto.
 
-### Exemplos de Recomendações Geradas (Suporte Mínimo de 15%)
+### Exemplos de Regras encontradas (Suporte Mínimo de 15%)
 
 As regras a seguir mostram algumas das associações mais fortes encontradas:
 
