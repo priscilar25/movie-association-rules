@@ -47,35 +47,6 @@ O projeto foi desenvolvido em dois Jupyter Notebooks, cada um focado em uma fase
 * **Mlxtend:** Biblioteca utilizada para a implementação do algoritmo Apriori e geração das regras de associação.
 * **Jupyter Notebook:** Como ambiente de desenvolvimento e apresentação do projeto.
 
-## 📊 Análise Exploratória (Insights)
-
-A análise inicial revelou insights importantes sobre o dataset:
-* **Usuários e Filmes:** O conjunto de dados contém **7.045 usuários** únicos e **62.423 filmes** únicos.
-* **Distribuição de Notas:** As notas mais comuns são 4.0 e 5.0, indicando uma tendência dos usuários a avaliar mais os filmes que gostaram.
-* **Filmes Mais Populares:** Filmes icônicos como *Forrest Gump*, *Shawshank Redemption* e *Pulp Fiction* estão entre os mais avaliados.
-* **Gêneros Predominantes:** Drama, Comédia, Ação e Suspense são os gêneros com maior frequência no dataset.
-
-## ⚙️ Metodologia e Resultados
-
-Para a geração das regras, foi estabelecida a premissa de que uma avaliação com **nota igual ou superior a 4.0** indica que o usuário "gostou" do filme. O algoritmo Apriori foi aplicado com os seguintes valores de suporte mínimo:
-
-| Variações do suporte mínimo | Número de Associações | Estatísticas | Suporte | Confiança | Lift      |
-| :--------------------------- | :-------------------- | :----------- | :------ | :-------- | :-------- |
-| **Suporte 5%** | 99280                 | min          | 0.05002 | 0.11629   | 1.02899   |
-|                              |                       | max          | 0.23320 | 0.97867   | 9.35148   |
-|                              |                       | média        | 0.05914 | 0.45297   | 2.91317   |
-| **Suporte 10%** | 1202                  | min          | 0.10004 | 0.23389   | 1.21137   |
-|                              |                       | max          | 0.23320 | 0.95119   | 4.68967   |
-|                              |                       | média        | 0.11916 | 0.51569   | 2.13345   |
-| **Suporte 15%** | 98                    | min          | 0.15149 | 0.35910   | 1.21347   |
-|                              |                       | max          | 0.23320 | 0.93192   | 4.10476   |
-|                              |                       | média        | 0.17689 | 0.59962   | 2.06119   |
-| **Suporte 20%** | 12                    | min          | 0.20193 | 0.46944   | 1.43525   |
-|                              |                       | max          | 0.23320 | 0.82944   | 2.67250   |
-|                              |                       | média        | 0.22147 | 0.61427   | 1.71203   |
-
-Observou-se que, ao aumentar o suporte mínimo, o número de regras geradas diminui drasticamente, mas as regras restantes tendem a ser mais robustas e generalizáveis.
-
 ### Exemplos de Recomendações Geradas (Suporte Mínimo de 15%)
 
 As regras a seguir mostram algumas das associações mais fortes encontradas:
