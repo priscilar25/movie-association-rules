@@ -1,5 +1,4 @@
 # Análise de Regras de Associação de Filmes
-### Utilizando o Algoritmo Apriori
 
 Este projeto de Mineração de Dados tem como objetivo analisar um conjunto de dados de avaliações de filmes para identificar padrões de comportamento dos usuários. Utilizando o algoritmo **Apriori**, foi gerado regras de associação que permitem fazer recomendações baseadas no princípio de que "usuários que assistiram ao filme X também tendem assistir ao filme Y".
 
